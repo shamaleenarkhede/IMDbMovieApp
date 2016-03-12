@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.research.priyankamehta.hw04.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/etmoviename"
+        android:id="@+id/tvMoviename"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/etreleasedate"
+        android:id="@+id/tvreldate"
+        android:layout_below="@+id/tvMoviename"
+
+        android:layout_marginTop="38dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/etgenre"
+        android:id="@+id/idgenre"
+        android:layout_below="@+id/tvreldate"
+
+        android:layout_marginTop="39dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/etdirector"
+        android:id="@+id/tvdirector"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/idgenre"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/etactor"
+        android:id="@+id/tvactor"
+        android:layout_centerVertical="true"/>
+
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_below="@+id/tvactor"
+        android:layout_toRightOf="@+id/idgenre"
+        android:layout_toEndOf="@+id/idgenre" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/etplot"
+        android:id="@+id/tvplottitle"
+        android:layout_below="@+id/ratingBar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/etplotdes"
+        android:id="@+id/tvplotdes"
+        android:layout_below="@+id/tvplottitle"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/etreleasedtdisplay"
+        android:id="@+id/tvreleasedisplay"
+        android:layout_above="@+id/idgenre"
+        android:layout_alignTop="@+id/tvreldate"
+        android:layout_toRightOf="@+id/tvreldate"
+        android:layout_toEndOf="@+id/tvreldate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/etdirdisp"
+        android:id="@+id/etdirdisp"
+        android:layout_alignBottom="@+id/tvdirector"
+        android:layout_alignTop="@+id/tvdirector"
+        android:layout_toRightOf="@+id/ivprevious"
+        android:layout_toEndOf="@+id/ivprevious" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/etactordisp"
+        android:id="@+id/etactordisp"
+        android:layout_alignTop="@+id/tvactor"
+        android:layout_toRightOf="@+id/tvdirector"
+        android:layout_toEndOf="@+id/tvdirector" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivprevious"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/arrow_left"
+        android:layout_alignTop="@+id/btnfinish" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnfinish"
+        android:id="@+id/btnfinish"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivnext"
+        android:src="@drawable/arrow_right"
+        android:layout_alignBottom="@+id/btnfinish"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnfinish" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/etgenredis"
+        android:id="@+id/genredisplay"
+        android:layout_toLeftOf="@+id/tvreleasedisplay"
+        android:layout_toEndOf="@+id/tvdirector"
+        android:layout_alignTop="@+id/idgenre"
+        android:layout_toRightOf="@+id/tvdirector" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivmovielink"
+        android:layout_alignRight="@+id/ivnext"
+        android:layout_alignEnd="@+id/ivnext"
+        android:layout_toEndOf="@+id/tvMoviename"
+        android:layout_above="@+id/ratingBar"
+        android:layout_alignTop="@+id/tvreleasedisplay"
+        android:layout_toRightOf="@+id/tvMoviename" />
+</RelativeLayout>

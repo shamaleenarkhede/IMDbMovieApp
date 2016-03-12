@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">"IMDb Movie App "</string>
+    <string name="etsearchkey"></string>
+    <string name="btnsearchmovies">Search IMDb.com</string>
+    <string name="etmoviename">Moviename</string>
+    <string name="etreleasedate">Release Date:</string>
+    <string name="etreleasedtdisplay"></string>
+    <string name="etgenre">Genre:</string>
+    <string name="etgenredis"></string>
+    <string name="etdirector">Director:</string>
+    <string name="etdirdisp"></string>
+    <string name="etactor">Actor:</string>
+    <string name="etactordisp"></string>
+    <string name="etplot">Plot:</string>
+    <string name="etplotdes">Description</string>
+    <string name="btnfinish">Finish</string>
+    <string name="searchActivity">Search Movies</string>
+    <string name="detailsActivity">Movie Details</string>
+    <string name="webviewActivity">Movie Webview</string>
+    <string name="textviewurl"></string>
+</resources>
